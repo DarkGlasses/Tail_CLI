@@ -15,11 +15,10 @@
       <div>
         <h1 class="text-3xl font-bold">IT world</h1>
       </div>      
-    </div>
 
 
     <!-- Navigation Menus-->
-    <nav class="flex space-x-6">
+    <nav class="hidden md:flex space-x-6">
       <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4 py-4 rounded-xl transition duration-300 ">Home</a>
       <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4 py-4 rounded-xl transition duration-300 ">About</a>
       <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4 py-4 rounded-xl transition duration-300 ">Product</a>
@@ -27,22 +26,79 @@
     </nav>
     
     <!-- Button Berger Menu-->
-    <button class="hidden">
-      Hamberger 
+    <button class="mb:hidden text-white id=" id="hamberger">
+      &#9776;
     </button>
+    </div>
+
   </header>
+
+  <div id="hamberger-menu" class="md-hidden bg-blue-600 text-white py-4 hidden">
+    <nav class="flex flex-col space-x-4 px-6">
+      <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4 rounded-xl transition duration-300 ">Home</a>
+      <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4 rounded-xl transition duration-300 ">About</a>
+      <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4 rounded-xl transition duration-300 ">Product</a>
+      <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4 rounded-xl transition duration-300 ">Contact</a>
+    </nav>
+
+  </div>
+  <script>
+    const hambergerButton = document.getElementById('hamberger');
+    const hambergerMenu = document.getElementById('hamberger-menu');
+
+    hambergerButton.addEventListener('click', () => {
+      hambergerMenu.classList.toggle('hidden')
+    });
+  </script>
   
     <!-- Carousel-->
       <section class="container mx-auto px-6 my-8">
         <h2 class="text-2xl font-bold mb-4">latest Gadgets</h2>
         <div class="relative">
           <div class="carousel flex overflow-x-scroll space-x-4">
-            <img src="image/sddefault.jpg" alt="" class="w-1 h-1 object-cover rounded-lg shadow-md">
-            <img src="image/360_F_695658623_qQOKTAa5f0NJ9QIvwDoImSiYGQvRbltI.jpg" alt="" class="w-1 h-1 object-cover rounded-lg shadow-md">
-            <img src="image/sddefault.jpg" alt="" class="w-1 h-1 object-cover rounded-lg shadow-md">
-            <img src="image/sddefault.jpg" alt="" class="w-1 h-1 object-cover rounded-lg shadow-md">
+            <img src="image/sddefault.jpg" alt="" class="w-25 h-25 object-cover rounded-lg shadow-md">
+            <img src="image/360_F_695658623_qQOKTAa5f0NJ9QIvwDoImSiYGQvRbltI.jpg" alt="" class="w-25 h-25 object-cover rounded-lg shadow-md">
+            <img src="image/sddefault.jpg" alt="" class="w-25 h-25 object-cover rounded-lg shadow-md">
+            <img src="image/sddefault.jpg" alt="" class="w-25 h-25 object-cover rounded-lg shadow-md">
           </div>
         </div>
      </section>
+
+     <!-- Card -->
+      <section class="container mx-auto px-6 my-8">
+        <h2 class="text-2xl font-bold mb-4">Feature Product</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="" alt="" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold">...</h3>
+            <p class="text-gray-600 mt-2">...</p>
+            <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">...</button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="" alt="" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold">...</h3>
+            <p class="text-gray-600 mt-2">...</p>
+            <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">...</button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="" alt="" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold">...</h3>
+            <p class="text-gray-600 mt-2">...</p>
+            <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">...</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer-->
+      <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+          <p>&copy; 2024 IT World. All right reserved</p>
+          <p class="mt-2">Follow us in sociala media for the lasted updaate.</p>
+        </div>
+      </footer>
 </body>
 </html>
