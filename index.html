@@ -10,7 +10,7 @@
 <body class="bg-gray-100 text-gray-800"> <!--ใส่พื้นหลังขข้อความ-->
 
   <!-- Navigation Bar -->
-  <header class="bg-blue-600 text-white py-4">
+  <header class="bg-black text-white py-4">
     <div class="container mx-auto px-6 flex item-center justify-between">
       <div>
         <h1 class="text-3xl font-bold">IT world</h1>
@@ -18,37 +18,38 @@
 
 
     <!-- Navigation Menus-->
-    <nav class="hidden md:flex space-x-6">
-      <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4 py-4 rounded-xl transition duration-300 ">Home</a>
-      <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4 py-4 rounded-xl transition duration-300 ">About</a>
-      <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4 py-4 rounded-xl transition duration-300 ">Product</a>
-      <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4 py-4 rounded-xl transition duration-300 ">Contact</a>
-    </nav>
+
+    <nav class="hidden lg:flex space-x-6">
+      
+    <a href="index.html" class="hover:bg-white hover:text-black px-4 py-2 rounded transition">HOME</a>
+    <a href="about.html" class="hover:bg-white hover:text-black px-4 py-2 rounded transition">ABOUT</a>
+    <a href="product.html" class="hover:bg-white hover:text-black px-4 py-2 rounded transition">PRODUCT</a>
+    <a href="contact.html" class="hover:bg-white hover:text-black px-4 py-2 rounded transition">CONTACT</a>
+</nav>
     
     <!-- Button Berger Menu-->
-    <button class="mb:hidden text-white id=" id="hamberger">
+    <button class="lg:hidden text-white text-3xl" id="hamberger">
       &#9776;
-    </button>
+  </button>
     </div>
 
   </header>
 
-  <div id="hamberger-menu" class="md-hidden bg-blue-600 text-white py-4 hidden">
-    <nav class="flex flex-col space-x-4 px-6">
-      <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4 rounded-xl transition duration-300 ">Home</a>
-      <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4 rounded-xl transition duration-300 ">About</a>
-      <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4 rounded-xl transition duration-300 ">Product</a>
-      <a href="" class="hover:bg-blue-300 hover:text-blue-900 px-4 rounded-xl transition duration-300 ">Contact</a>
+  <div id="hamberger-menu" class="md-hidden bg-white text-black py-4 hidden">
+    <nav class="flex flex-col space-y-4 px-6">
+        <a href="index.html" class="hover:bg-black hover:text-white px-4 rounded transition">HOME</a>
+        <a href="about.html" class="hover:bg-black hover:text-white px-4 rounded transition">ABOUT</a>
+        <a href="product.html" class="hover:bg-black hover:text-white px-4 rounded transition">PRODUCT</a>
+        <a href="contact.html" class="hover:bg-black hover:text-white px-4 rounded transition">CONTACT</a>        
     </nav>
-
-  </div>
+</div>
   <script>
     const hambergerButton = document.getElementById('hamberger');
-    const hambergerMenu = document.getElementById('hamberger-menu');
+const hambergerMenu = document.getElementById('hamberger-menu');
 
-    hambergerButton.addEventListener('click', () => {
-      hambergerMenu.classList.toggle('hidden')
-    });
+hambergerButton.addEventListener('click', () => {
+  hambergerMenu.classList.toggle('hidden'); 
+});
   </script>
   
     <!-- Carousel-->
@@ -56,49 +57,72 @@
         <h2 class="text-2xl font-bold mb-4">latest Gadgets</h2>
         <div class="relative">
           <div class="carousel flex overflow-x-scroll space-x-4">
-            <img src="image/sddefault.jpg" alt="" class="w-25 h-25 object-cover rounded-lg shadow-md">
-            <img src="image/360_F_695658623_qQOKTAa5f0NJ9QIvwDoImSiYGQvRbltI.jpg" alt="" class="w-25 h-25 object-cover rounded-lg shadow-md">
-            <img src="image/sddefault.jpg" alt="" class="w-25 h-25 object-cover rounded-lg shadow-md">
-            <img src="image/sddefault.jpg" alt="" class="w-25 h-25 object-cover rounded-lg shadow-md">
+            <img src="image/air tag.jpg" alt="" class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="image/applewatch.jpg" alt="" class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="image/headphone.jpg" alt="" class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="image/i14.jfif" alt="" class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="image/ipad.jfif" alt="" class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="image/ipod.jfif" alt="" class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="image/mac.jfif" alt="" class="w-full h-60 object-cover rounded-lg shadow-md">
           </div>
         </div>
      </section>
 
      <!-- Card -->
-      <section class="container mx-auto px-6 my-8">
-        <h2 class="text-2xl font-bold mb-4">Feature Product</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <img src="" alt="" class="w-full h-48 object-cover rounded-lg mb-4">
-            <h3 class="text-xl font-semibold">...</h3>
-            <p class="text-gray-600 mt-2">...</p>
-            <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">...</button>
-          </div>
+     <section class="container mx-auto px-6 my-8">
+      <h2 class="text-2xl font-bold mb-4">Feature Product</h2>
+      <div class="grid grid-cols-3 gap-8">
+        <div class="rounded-lg shadow-lg">
+          <img src="image/air tag.jpg" alt="" class="w-full h-48 object-cover rounded-lg mb-4 full">
+          <h3 class="text-xl font-semibold">Air Tag</h3>
+          <p class="text-gray-600 mt-2">small, circular, tracking device developed by Apple Inc.</p>
+          <button class="mt-4 bg-black text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition duration-300 ">More Detail</button>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <img src="" alt="" class="w-full h-48 object-cover rounded-lg mb-4">
-            <h3 class="text-xl font-semibold">...</h3>
-            <p class="text-gray-600 mt-2">...</p>
-            <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">...</button>
-          </div>
+        <div class="rounded-lg shadow-lg">
+          <img src="image/applewatch.jpg" alt="" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold">Apple Watch</h3>
+          <p class="text-gray-600 mt-2">smartwatches developed by Apple Inc.</p>
+          <button class="mt-4 bg-black text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition duration-300">More Detail</button>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <img src="" alt="" class="w-full h-48 object-cover rounded-lg mb-4">
-            <h3 class="text-xl font-semibold">...</h3>
-            <p class="text-gray-600 mt-2">...</p>
-            <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">...</button>
-          </div>
+        <div class="rounded-lg shadow-lg">
+          <img src="image/headphone.jpg" alt="" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold">Airpod Max</h3>
+          <p class="text-gray-600 mt-2">apple's premium over-ear headphones.</p>
+          <button class="mt-4 bg-black text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition duration-300">More Detail</button>
         </div>
-      </section>
+      </div>
+    </section>
+
+
+    <section class="container mx-auto px-6 my-8 ">
+      <div class="grid grid-cols-3 gap-8">
+        <div class="rounded-lg shadow-lg">
+          <img src="image/i14.jfif" alt="" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold">Iphone 14</h3>
+          <p class="text-gray-600 mt-2">iphone 14</p>
+          <button class="mt-4 bg-black text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition duration-300">More Detail</button>
+        </div>
+        <div class="rounded-lg shadow-lg">
+          <img src="image/ipad.jfif" alt="" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold">Ipad</h3>
+          <p class="text-gray-600 mt-2">tablet computers developed by Apple Inc.</p>
+          <button class="mt-4 bg-black text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition duration-300">More Detail</button>
+        </div>
+        <div class="rounded-lg shadow-lg">
+          <img src="image/mac.jfif" alt="" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold">Macbook</h3>
+          <p class="text-gray-600 mt-2">laptops developed by Apple Inc.</p>
+          <button class="mt-4 bg-black text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition duration-300">More Detail</button>
+        </div>
+      </div>
+    </section>
 
       <!-- Footer-->
-      <footer class="bg-blue-600 text-white py-6">
+      <footer class="bg-black text-white py-6">
         <div class="container mx-auto text-center">
           <p>&copy; 2024 IT World. All right reserved</p>
           <p class="mt-2">Follow us in sociala media for the lasted updaate.</p>
-        </div>
+        </div>  
       </footer>
 </body>
 </html>
